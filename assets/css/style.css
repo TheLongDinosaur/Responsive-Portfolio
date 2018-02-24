@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: url('../images/cardboard.png');
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: auto;
+  color: #777777;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4aaaa5;
+  font-weight: bold; 
+}
+
+header {
+  width: 100%;
+  font-size: 22px;
+  background: #ffffff;
+  border-bottom: 3px solid #cccccc;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  background: #4aaaa5;
+  color: white;
+  display: inline-block;
+  padding: 30px;
+  font-size: 30px;
+}
+
+.nav {
+  width: 300px;
+  float: right;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.nav ul li {
+  display: inline;
+  overflow: hidden;
+}
+
+.nav ul li a {
+  color: #333333;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-right: 2px solid #4aaaa5;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+form input, form textarea {
+  width: 100%;
+  display: block;
+  margin: 5px 0 20px 0;
+  border: 2px solid #cccccc;
+  padding: 7px;
+  font-size: 16px;
+}
+
+form button {
+  background: #4aaaa5;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+}
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  background: #666666;
+  border-top: 5px solid #4aaaa5;
+  margin-bottom: 22px;
+  padding: 30px;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.inline-img {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
+.portfolioItem {
+  position: relative;
+  background-color: #777777;
+  margin-bottom: 20px;
+  width: 45%;
+  float: left;
+  height: 250px;
+  width: 275px;
+}
+
+.portfolioItem:nth-of-type(even) {
+  float: right;
+}
+
+.portfolioItem h4 {
+  background: #4aaaa5;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+}
+
+#imageOne {
+  background: url('../images/img1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#imageTwo {
+  background: url('../images/img2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#imageThree {
+  background: url('../images/img3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#imageFour {
+  background: url('../images/img4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#imageFive {
+  background: url('../images/img5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#imageSix {
+  background: url('../images/img6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+#left-column {
+  position: absolute;
+  height: auto;
+  background: white;
+  padding: 24px;
+  border: 2px solid #ccc;
+  width: 650px;
+  float: left;
+}
+
+#left-column h2 {
+  font-size: 24px;
+  padding: 15px 0;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+#right-column {
+  background: white;
+  padding: 25px;
+  border: 2px solid #ccc;
+  width: 270px;
+  float: right;
+}
+
+#right-column h3 {
+  font-size: 20px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+  padding: 17px;
+}
+
+#right-column ul {
+  text-align: center;
+}
+
+#right-column ul li {
+  display: inline-block;
+}
+
+#right-column ul li img {
+  width: 60px;
+}
+
+/* I really struggled this week.  I would like to explain
+that I fell behind due to the workload at my job
+ (they still expect me to put in at least 60 hours a week,
+ even though they know I'm in school). However, I think
+ most everyone else in this class has a job too, so I am aware
+ it would only come across as an excuse. When I jumped
+ into this assignment it wasn't long before I started to
+ feel completely lost. I'm having a lot of difficulty in
+ understanding why my responsive layouts just wouldn't work
+ the way I thought they would and how exactly to correct the
+ markup. I've spent hours now on this and still could not
+ figure it out- I'm still researching, re-reading, because I
+ obviously missed something. I know I will get a failing grade
+ on this and the Bootstrap-Portfolio homework. I am taking it
+ as a hard lesson. I am taking action to bring myself up to
+ speed so I don't fall behind again. As well, I have made a
+ promise to myself to prioritize this class over my job, even
+ if that means losing it (it's a soul-sucking, toxic culture
+ there anyway- who needs that?!). I will do better going forward.
+  Sorry, and thanks for reading.*/
+
+@media screen and (max-width:980px) {
+  .container{
+    width:auto;
+    height: auto;
+  }
+  #left-column{
+    width:70%;
+  }
+  #right-column{
+    width:25%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #left-column{
+    width:70%;
+  }
+  #right-column{
+    width:25%;
+  }
+}
+
+@media screen and (max-width:640px) {
+  
+  #left-column{
+    width:100%;
+  }
+  #right-column { }
+  .container {
+    width: 680px;
+    }
+}
